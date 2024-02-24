@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TronLink.Blazor", "TronLink.Blazor\TronLink.Blazor.csproj", "{ED1A09CE-B0B1-4FA5-8469-83BFA7347860}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TronLink.Blazor.Example.WASM", "TronLink.Blazor.Example.WASM\TronLink.Blazor.Example.WASM.csproj", "{DC93EFF6-25C6-4282-BF5A-9E496739C0FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{ED1A09CE-B0B1-4FA5-8469-83BFA7347860}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED1A09CE-B0B1-4FA5-8469-83BFA7347860}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED1A09CE-B0B1-4FA5-8469-83BFA7347860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC93EFF6-25C6-4282-BF5A-9E496739C0FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC93EFF6-25C6-4282-BF5A-9E496739C0FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC93EFF6-25C6-4282-BF5A-9E496739C0FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC93EFF6-25C6-4282-BF5A-9E496739C0FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
