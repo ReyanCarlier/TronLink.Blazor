@@ -1,0 +1,30 @@
+﻿@page "/"
+@using TronLink.Blazor.Extensions
+@inject ITronLinkService TronLinkService
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, TRON!</h1>
+
+<div>My address is: @_address</div>
+<div>My balance is: @_balance TRX</div>
+<div>My resources :</div>
+<div>- </div>
+
+@code
+{
+    string _address = "Not Found";
+    decimal _balance = 0;
+    
+    
+    protected override async Task OnInitializedAsync()
+    {
+        if (await TronLinkService.HasTronLink())
+        {
+            _address = await TronLinkService.GetSelectedAddress();
+            _balance = await TronLinkService.GetBalance(_address);
+            
+            Console.WriteLine(_address);
+        }
+    }
+}
